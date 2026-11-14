@@ -1,0 +1,23 @@
+{
+  "name": "wibblio64.github.io",
+  "version": "1.0.0",
+  "description": "resource dump for my website",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wibblio64/wibblio64.github.io.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/wibblio64/wibblio64.github.io/issues"
+  },
+  "homepage": "https://github.com/wibblio64/wibblio64.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.8"
+  }
+}

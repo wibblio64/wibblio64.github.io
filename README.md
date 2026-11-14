@@ -1,2 +1,2 @@
-# wibblio.neocities.org
+# my website
 resource dump for my website
