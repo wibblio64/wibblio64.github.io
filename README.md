@@ -1,2 +1,4 @@
-# my website
-resource dump for my website
+# My website
+The source code for my website.
+
+Runs on Eleventy.
