@@ -59,6 +59,11 @@ a {
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
     position: absolute;
     left: 0;
     bottom: 0;
@@ -66,7 +71,9 @@ footer {
     width: 100%;
     height: fit-content;
 
+    padding: 4px 8px;
+
     font-size: 12px;
     
-    padding: 4px 8px;
+    background: #EEE;
 }
