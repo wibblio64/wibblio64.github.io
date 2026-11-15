@@ -1,4 +1,3 @@
-# My website
-The source code for my website.
+This is the source code for my website.
 
 Runs on Eleventy.
