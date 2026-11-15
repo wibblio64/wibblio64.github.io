@@ -30,6 +30,10 @@ body {
 img {
     width: 128px;
     height: 128px;
+
+    box-shadow: 2px 2px 0 #2222222C;
+
+    cursor: pointer;
 }
 
 p {
@@ -49,12 +53,14 @@ a {
 
     font-weight: bold;
 
-    color: #588beb;
+    color: #588BEB;
 
     transition: 0.1s;
 
     &:hover {
         top: -2px;
+
+        text-shadow: 2px 2px 4px #588BEB7C;
     }
 }
 
@@ -75,5 +81,5 @@ footer {
 
     font-size: 12px;
     
-    background: #EEE;
+    background: linear-gradient(0deg, #EEE 50%, rgba(0, 0, 0, 0));
 }
