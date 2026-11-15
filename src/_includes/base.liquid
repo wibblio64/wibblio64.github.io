@@ -12,6 +12,9 @@
         <title>{{ title }}</title>
     </head>
     <body>
-        {{ content }}
+        <main>
+            {{ content }}
+        </main>
+        {% include "partials/footer.liquid" %}
     </body>
 </html>
