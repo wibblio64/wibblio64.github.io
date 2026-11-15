@@ -1,6 +1,6 @@
 ﻿---
-layout: base.liquid
-title: home
+layout: layouts/base.liquid
+title: Home
 ---
 
 <img src="/assets/images/max.png" alt="Max" title="Lovable scamp."/>
