@@ -7,4 +7,6 @@ title: Home
 
 Hi there! This is my website. It looks pretty unfinished, at the moment.<br/>This is sort of just a placeholder, for now.
 
-To check out my old site, [go here](https://wibblio.neocities.org/).
+To check out my old site, [click here](https://wibblio.neocities.org/).
+
+<div id="nepeta"></div>

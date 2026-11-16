@@ -1,16 +1,13 @@
 (() => {
-    const sounds = {
-        meow: new Audio("/sounds/meow.mp3")
-    };
+    const meow = new Audio("/sounds/meow.mp3");
 
     function onClick() {
-        const sound = sounds.meow.cloneNode();
+        const sound = meow.cloneNode();
         sound.play();
     }
 
-    const nepeta = document.createElement("div");
+    const nepeta = document.getElementById("nepeta");
     nepeta.addEventListener("click", onClick);
-    document.body.appendChild(nepeta);
 
     let x = 0;
     let y = 0;
@@ -22,6 +19,8 @@
     let direction = 1;
 
     (function update() {
+        if (!nepeta) return;
+
         x += velocity.x * direction;
         y += velocity.y;
         velocity.y -= gravity;
@@ -47,6 +46,7 @@
         nepeta.style.left = `${x}px`;
         nepeta.style.bottom = `${y}px`;
         nepeta.style.transform = `scaleX(${direction})`;
+        nepeta.style.zIndex = 999;
 
         setTimeout(update, 1000 / 60);
     })();
