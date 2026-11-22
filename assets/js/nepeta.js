@@ -1,5 +1,5 @@
 (() => {
-    const meow = new Audio("/sounds/meow.mp3");
+    const meow = new Audio("/assets/sounds/meow.mp3");
 
     function onClick() {
         const sound = meow.cloneNode();
@@ -41,7 +41,7 @@
         nepeta.style.position = "absolute";
         nepeta.style.width = `${width}px`;
         nepeta.style.height = `${height}px`;
-        nepeta.style.background = `no-repeat url("/images/nepeta_run.gif")`;
+        nepeta.style.background = `no-repeat url("/assets/images/nepeta_run.gif")`;
         nepeta.style.cursor = "pointer";
         nepeta.style.left = `${x}px`;
         nepeta.style.bottom = `${y}px`;

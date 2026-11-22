@@ -1,0 +1,10 @@
+title: wibblio
+description: Professional air-breather.
+url: "https://wibblio64.github.io/"
+baseurl: ""
+
+markdown: kramdown
+
+safe: true
+lsi: false
+pygments: true
