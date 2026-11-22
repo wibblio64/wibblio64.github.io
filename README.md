@@ -1,7 +1,6 @@
 # wibblio64.github.io
 This is the source code for my personal website, [wibblio64.github.io](https://wibblio64.github.io/).
-
-This site runs on [Jekyll](https://jekyllrb.com/), an open-source static site generator built in Ruby.
+It runs on [Jekyll](https://jekyllrb.com/), an open-source static site generator built in Ruby.
 
 ## Local Testing
 
