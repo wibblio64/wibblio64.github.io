@@ -4,6 +4,9 @@ permalink: none
 url: "https://wibblio64.github.io/"
 baseurl: ""
 
+plugins:
+  - jekyll-feed
+
 markdown: kramdown
 
 safe: true
