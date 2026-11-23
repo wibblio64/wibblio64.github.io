@@ -1,0 +1,45 @@
+---
+import Nepeta from "@/components/Nepeta.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Home">
+    <img src="/images/max.png" alt="Max" title="Lovable scamp." id="max"/>
+    <p>
+        Hi there! This is my website. It looks pretty unfinished, at the moment.
+        <br/>
+        This is sort of just a placeholder, for now.
+    </p>
+    <p>To check out my old site, <a href="https://wibblio.neocities.org/">click here</a>.</p>
+
+    <Nepeta/>
+</Layout>
+
+<script>
+    const sounds: HTMLAudioElement[] = [
+        new Audio("/sounds/hey.ogg"),
+        new Audio("/sounds/meat.ogg"),
+        new Audio("/sounds/poetry.ogg"),
+        new Audio("/sounds/sam.ogg"),
+        new Audio("/sounds/shoot.ogg"),
+        new Audio("/sounds/swiss.ogg"),
+        new Audio("/sounds/time.ogg"),
+        new Audio("/sounds/tinylegs.ogg"),
+        new Audio("/sounds/twocanplay.ogg"),
+        new Audio("/sounds/watchout.ogg"),
+        new Audio("/sounds/yes.ogg")
+    ];
+
+    function onClick(): void {
+        for (const sound of sounds) {
+            sound.currentTime = 0;
+            sound.pause();
+        }
+
+        const sound: HTMLAudioElement = sounds[Math.floor(Math.random() * sounds.length)];
+        sound.play();
+    }
+
+    const max = document.getElementById("max");
+    max?.addEventListener("click", onClick);
+</script>

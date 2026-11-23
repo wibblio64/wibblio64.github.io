@@ -1,0 +1,26 @@
+---
+import Footer from "@/components/Footer.astro";
+import "@/styles/global.css";
+
+const url = new URL(Astro.url.pathname, Astro.site);
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width"/>
+		<link rel="icon" type="image/png" href="/images/max.png"/>
+		<meta name="generator" content={Astro.generator}/>
+        <meta name="description" content="Professional air-breather.">
+        <meta property="og:title" content={title}>
+        <meta property="og:description" content="Professional air-breather.">
+        <meta property="og:url" content={url}>
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot/>
+        <Footer/>
+	</body>
+</html>
