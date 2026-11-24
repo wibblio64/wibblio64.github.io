@@ -14,7 +14,11 @@ export default function Nepeta() {
   const moveSpeed = 5;
   const jumpForce = 8;
 
+  const meowRef = useRef<HTMLAudioElement | null>(null);
+
   useEffect(() => {
+    meowRef.current = new Audio("/sounds/meow.mp3");
+    
     const interval = setInterval(() => {
       setSpeedX(speedX);
       setSpeedY(speedY - gravity);
@@ -40,8 +44,6 @@ export default function Nepeta() {
 
     return () => clearInterval(interval);
   }, [direction, speedX, speedY, x, y]);
-
-  const meowRef = useRef(new Audio("/sounds/meow.mp3"));
 
   function meow(): void {
     meowRef.current.currentTime = 0;
