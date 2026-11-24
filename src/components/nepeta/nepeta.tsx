@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import styles from "./nepeta.module.css";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 export default function Nepeta() {
   const [speedX, setSpeedX] = useState(5);
