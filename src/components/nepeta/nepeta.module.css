@@ -1,0 +1,6 @@
+.nepeta {
+  position: absolute;
+  z-index: 999;
+
+  cursor: pointer;
+}
