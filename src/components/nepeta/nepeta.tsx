@@ -45,8 +45,10 @@ export default function Nepeta() {
   }, [direction, speedX, speedY, x, y]);
 
   function meow(): void {
-    meowRef.current.currentTime = 0;
-    meowRef.current.play();
+    if (meowRef.current) {
+      meowRef.current.currentTime = 0;
+      meowRef.current.play();
+    }
   }
 
   return (
