@@ -16,17 +16,6 @@ body {
   line-height: 24px;
 }
 
-img {
-  width: 128px;
-  height: 128px;
-
-  box-shadow: 4px 4px 4px #2222222F;
-}
-
-p {
-  font-size: 16px;
-}
-
 a {
   position: relative;
   top: 0;
@@ -44,24 +33,4 @@ a {
 
     text-shadow: 2px 2px 4px #588BEB7C;
   }
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  width: 100%;
-  height: fit-content;
-
-  padding: 4px 8px;
-
-  background: linear-gradient(0deg, #EEE 50%, rgba(0, 0, 0, 0));
-  
-  font-size: 12px;
 }

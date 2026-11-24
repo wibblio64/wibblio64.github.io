@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: fit-content;
+
+  padding: 4px 8px;
+
+  background: linear-gradient(0deg, #EEE 50%, rgba(0, 0, 0, 0));
+  
+  font-size: 12px;
+}
