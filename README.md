@@ -1,7 +1,7 @@
 # wibblio64.github.io
 This is the source code for my personal website, [wibblio64.github.io](https://wibblio64.github.io/).
 
-It runs on [Astro](https://astro.build/), a server-first web framework built in TypeScript, and [Bun](https://bun.sh/), a fast, all-in-one JavaScript/TypeScript runtime. Both are open-source.
+It runs on [NextJS](https://nextjs.org/), a full-stack web framework built in TypeScript, and [Bun](https://bun.sh/), a fast, all-in-one JavaScript/TypeScript runtime. Both are open-source.
 
 ## Local Testing
 
