@@ -13,12 +13,11 @@ export default function Nepeta() {
   const gravity = 0.75;
   const moveSpeed = 5;
   const jumpForce = 8;
-
   const meowRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     meowRef.current = new Audio("/sounds/meow.mp3");
-    
+
     const interval = setInterval(() => {
       setSpeedX(speedX);
       setSpeedY(speedY - gravity);
