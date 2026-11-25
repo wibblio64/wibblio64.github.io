@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "wibblio",
+  title: "wibblio's website",
   description: "Professional air-breather.",
 };
 

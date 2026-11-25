@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <main>
-      <h1>404!</h1>
+      <h2 style={{ margin: "12px 0" }}>404!</h2>
       <p>
         Sorry, I couldn&apos;t find what you were looking for.
         <br/>

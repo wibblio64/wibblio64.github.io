@@ -11,8 +11,8 @@ export default function Nepeta() {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const gravity = 0.75;
-  const moveSpeed = 5;
-  const jumpForce = 8;
+  const moveSpeed = 8;
+  const jumpForce = 12;
   const meowRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
