@@ -5,14 +5,14 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 export default function Nepeta() {
-  const [speedX, setSpeedX] = useState(5);
+  const gravity = 0.75;
+  const moveSpeed = 8;
+  const jumpForce = 12;
+  const [speedX, setSpeedX] = useState(moveSpeed);
   const [speedY, setSpeedY] = useState(0);
   const [direction, setDirection] = useState(1);
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
-  const gravity = 0.75;
-  const moveSpeed = 8;
-  const jumpForce = 12;
   const meowRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
