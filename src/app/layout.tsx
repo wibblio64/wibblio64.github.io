@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Footer from "@/components/footer";
+import Nepeta from "@/components/nepeta";
 
 export const metadata: Metadata = {
   title: "wibblio's website",
@@ -12,7 +13,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en">
       <body>
         {children}
-        <Footer />
+        <Footer/>
+        <Nepeta/>
       </body>
     </html>
   );

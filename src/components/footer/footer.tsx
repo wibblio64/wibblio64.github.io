@@ -1,5 +1,5 @@
-import Image from "next/image";
 import styles from "./footer.module.css";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -15,19 +15,49 @@ export default function Footer() {
       </div>
       <div className={styles.right}>
         <a href="https://deltarune.com/">
-          <Image src="/images/buttons/kris_where_tf_are_we.png" alt="" width={88} height={31} />
+          <Image
+            src="/images/buttons/kris_where_tf_are_we.png"
+            alt=""
+            width={88}
+            height={31}
+            draggable={false}
+          />
         </a>
         <a href="https://www.apple.com/">
-          <Image src="/images/buttons/macintosh.gif" alt="" width={88} height={31} />
+          <Image
+            src="/images/buttons/macintosh.gif"
+            alt=""
+            width={88}
+            height={31}
+            draggable={false}
+          />
         </a>
         <a href="https://www.homestuck.com/">
-          <Image src="/images/buttons/sburb.gif" alt="" width={88} height={31} />
+          <Image
+            src="/images/buttons/sburb.gif"
+            alt=""
+            width={88}
+            height={31}
+            draggable={false}
+          />
         </a>
         <a href="https://www.neocities.org/">
-          <Image src="/images/buttons/webpassion.gif" alt="" width={88} height={31} />
+          <Image
+            src="/images/buttons/webpassion.gif"
+            alt=""
+            width={88}
+            height={31}
+            draggable={false}
+          />
         </a>
         <a href="https://www.nintendo.com/">
-          <Image src="/images/buttons/wii.gif" alt="" width={88} height={31} />
+          <Image
+            src="/images/buttons/wii.gif"
+            alt=""
+            width={88}
+            height={31}
+            draggable={false}
+          />
         </a>
       </div>
     </footer>

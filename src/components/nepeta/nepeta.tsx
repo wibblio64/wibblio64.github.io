@@ -1,23 +1,22 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import useSound from "use-sound";
 import styles from "./nepeta.module.css";
-import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 export default function Nepeta() {
-  const gravity = 0.75;
-  const moveSpeed = 8;
-  const jumpForce = 12;
+  const gravity: number = 0.75;
+  const moveSpeed: number = 8;
+  const jumpForce: number = 8;
   const [speedX, setSpeedX] = useState(moveSpeed);
   const [speedY, setSpeedY] = useState(0);
   const [direction, setDirection] = useState(1);
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
-  const meowRef = useRef<HTMLAudioElement | null>(null);
+  const [playMeow] = useSound("/sounds/meow.mp3");
 
   useEffect(() => {
-    meowRef.current = new Audio("/sounds/meow.mp3");
-
     const interval = setInterval(() => {
       setSpeedX(speedX);
       setSpeedY(speedY - gravity);
@@ -44,27 +43,22 @@ export default function Nepeta() {
     return () => clearInterval(interval);
   }, [direction, speedX, speedY, x, y]);
 
-  function meow(): void {
-    if (meowRef.current) {
-      meowRef.current.currentTime = 0;
-      meowRef.current.play();
-    }
-  }
-
   return (
     <Image
       src="/images/nepeta.gif"
       alt=""
       width={187}
       height={220}
-      draggable="false"
+      draggable={false}
+      loading="eager"
+      fetchPriority="high"
       className={styles.nepeta}
       style={{
         bottom: y,
         left: x,
         transform: `scaleX(${direction})`
       }}
-      onClick={meow}
+      onClick={() => playMeow()}
     />
   );
 }
