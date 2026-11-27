@@ -18,11 +18,10 @@ export default function Nepeta() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSpeedX(speedX);
-      setSpeedY(speedY - gravity);
+      setSpeedY(prevSpeedY => prevSpeedY - gravity);
 
-      setX(x + speedX);
-      setY(y + speedY);
+      setX(prevX => prevX + speedX);
+      setY(prevY => prevY + speedY);
 
       if (x < 0) {
         setX(0);
